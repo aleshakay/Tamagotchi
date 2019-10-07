@@ -1,1 +1,0 @@
-import '../../styles/eat.scss';
