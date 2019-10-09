@@ -1,9 +1,33 @@
 import './sleep.scss';
 import utilities from '../../helpers/utilities';
-import foods from '../data/eatHealth';
+
+const sleeps = [
+  {
+    id: 'nap',
+    points: 50,
+  },
+  {
+    id: 'sleep',
+    points: 60,
+  },
+];
 
 const addColor = () => {
   document.getElementById('sleep').classList.add('pull-right');
+};
+
+const createSleepButton = () => {
+  let domString = '<div id="sleepbtnSection">';
+  for (let i = 0; i < sleeps.length; i += 1) {
+    const sleep = sleeps[i];
+    domString += `
+    <button id="${sleep.id}" class="sleep-button sleep-button-${sleep.id}">
+      <div>${sleep.id}</div>
+    </button>
+  `;
+  }
+  domString += '</div>';
+  return domString;
 };
 
 const sleepBuilder = () => {
@@ -14,14 +38,8 @@ const sleepBuilder = () => {
     </div>
     <div class='row'></div>
   </div>`;
-  for (let i = 0; i < foods.length; i += 1) {
-    domString += `
-        <div id='unhealthybtn'>
-          <button class="cookies">${foods.id}</Button>
-        </div>
-      `;
-  }
   addColor();
+  domString += createSleepButton(sleeps);
   utilities.printToDom('sleep', domString);
 };
 
