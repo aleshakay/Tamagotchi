@@ -7,7 +7,13 @@ import play from './components/play/play';
 
 const init = () => {
   eat.eatBuilder();
+  eat.addingHealthyFood();
+  eat.addingSnackFood();
+  eat.bar();
   sleep.sleepBuilder();
+  sleep.bar();
+  sleep.lessEnergy();
+  sleep.moreEnergy();
   fight.fightBuilder();
   play.playBuilder();
 };

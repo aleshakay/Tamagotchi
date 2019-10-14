@@ -12,9 +12,19 @@ button {
     font-weight: bold;
     padding: 0 40px;
     background: rgb(129, 121, 121);
-    border: none;
+    border: 2px solid silver;
   }
 
   button:hover {
     background: lightsalmon;
   }
+
+  #myBar{
+    margin-left: 20px;
+     border: 2px solid silver;
+  }
+
+#eatbtnSection{
+  display: flex;
+  justify-content: space-around;
+}
