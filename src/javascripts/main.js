@@ -17,7 +17,8 @@ const init = () => {
   fight.fightBuilder();
   fight.pushing();
   fight.runAway();
-  fight.bar();
   play.playBuilder();
+  play.sporting();
+  play.playdoll();
 };
 init();
