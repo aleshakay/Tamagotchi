@@ -4,3 +4,13 @@ div.quad {
     float: left;
 }
 #fight { background-color: rgb(131, 131, 175); };
+
+#fightBar{
+    margin-left: 20px;
+     border: 2px solid silver;
+  }
+
+  #fightbtnSection{
+    display: flex;
+    justify-content: space-around;
+  }
