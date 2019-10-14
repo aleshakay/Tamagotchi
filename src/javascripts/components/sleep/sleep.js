@@ -51,9 +51,13 @@ const lessEnergy = () => {
   });
 };
 
-const bar = () => {
+const sleepingbar = () => {
   document.getElementById('sleepBar').value = energy;
   energy -= 1;
+  const sleepByTime = () => {
+    setInterval(sleepingbar, 20000);
+  };
+  sleepByTime();
 };
 
 const sleepBuilder = () => {
@@ -78,5 +82,5 @@ export default {
   sleepBuilder,
   moreEnergy,
   lessEnergy,
-  bar,
+  sleepingbar,
 };

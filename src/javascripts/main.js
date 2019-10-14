@@ -11,10 +11,13 @@ const init = () => {
   eat.addingSnackFood();
   eat.bar();
   sleep.sleepBuilder();
-  sleep.bar();
+  sleep.sleepingbar();
   sleep.lessEnergy();
   sleep.moreEnergy();
   fight.fightBuilder();
+  fight.pushing();
+  fight.runAway();
+  fight.bar();
   play.playBuilder();
 };
 init();
