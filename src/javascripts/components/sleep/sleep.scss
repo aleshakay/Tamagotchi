@@ -5,3 +5,13 @@ div.quad {
 }
 
 #sleep { background-color: rgb(194, 115, 161); };
+
+#sleepBar{
+    margin-left: 20px;
+     border: 2px solid silver;
+  }
+
+  #sleepbtnSection{
+    display: flex;
+    justify-content: space-around;
+  }

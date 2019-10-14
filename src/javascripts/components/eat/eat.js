@@ -31,6 +31,32 @@ const createHeathButton = () => {
   return domString;
 };
 
+let full = 100;
+
+const addingHealthyFood = () => {
+  document.getElementById('apples').addEventListener('click', () => {
+    const healthy = full + 10;
+    if (healthy > 100) {
+      full = 100;
+    } else {
+      full = healthy;
+    }
+    document.getElementById('myBar').setAttribute('style', `width: ${full}%`);
+  });
+};
+
+const addingSnackFood = () => {
+  document.getElementById('cookies').addEventListener('click', () => {
+    full -= 3;
+    document.getElementById('myBar').setAttribute('style', `width:${full}%`);
+  });
+};
+
+const bar = () => {
+  document.getElementById('myBar').value = full;
+  full -= 10;
+};
+
 const eatBuilder = () => {
   let domString = `
   <div>
@@ -38,6 +64,11 @@ const eatBuilder = () => {
       <h1>Eat</h1> 
     </div>
     <div class='row'></div>
+  </div>
+  <div id="progress-container">
+    <div id="myProgress">
+      <div id="myBar" class="quad-bar" style="width: ${full}%"></div>
+    </div>
   </div>`;
   addColor();
   domString += createHeathButton(foods);
@@ -45,4 +76,9 @@ const eatBuilder = () => {
 };
 
 
-export default { eatBuilder };
+export default {
+  eatBuilder,
+  addingHealthyFood,
+  addingSnackFood,
+  bar,
+};

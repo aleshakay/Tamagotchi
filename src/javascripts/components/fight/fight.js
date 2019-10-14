@@ -37,7 +37,8 @@ const fightBuilder = () => {
       <h1>Fight</h1> 
     </div>
     <div class='row'></div>
-  </div>`;
+  </div>
+  `;
   addColor();
   domString += createfightButton(fights);
   utilities.printToDom('fight', domString);
