@@ -51,14 +51,6 @@ const pushing = () => {
   });
 };
 
-const bar = () => {
-  document.getElementById('fightBar').value = strength;
-  strength -= 7;
-  const fightByTime = () => {
-    setInterval(bar, 20000);
-  };
-  fightByTime();
-};
 
 const fightBuilder = () => {
   let domString = `
@@ -83,5 +75,4 @@ export default {
   fightBuilder,
   pushing,
   runAway,
-  bar,
 };
