@@ -72,6 +72,8 @@ const eatBuilder = () => {
   </div>`;
   addColor();
   domString += createHeathButton(foods);
+  domString += '<div id="virtualPet"><img src = "http://www.oocities.org/petsburgh/8079/gig.gif" alt= "virtualpet"></div>';
+
   utilities.printToDom('eat', domString);
 };
 

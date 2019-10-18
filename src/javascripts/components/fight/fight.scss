@@ -3,7 +3,9 @@ div.quad {
     height: 50%;
     float: left;
 }
-#fight { background-color: rgb(131, 131, 175); };
+#fight { 
+  background-color: rgb(131, 131, 175); 
+};
 
 #fightBar{
     margin-left: 20px;
@@ -14,3 +16,11 @@ div.quad {
     display: flex;
     justify-content: space-around;
   }
+
+.fightTitle{
+  h1{
+    text-align: left;
+    margin: 8px;
+    padding: 8px;
+  }
+}
